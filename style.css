@@ -171,7 +171,40 @@ section > h2 {
   display: block;
   border-radius: 10px;
   border: 1px solid #1e293b;
-}.projeto button {
+}
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  z-index: 2000;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.lightbox:target {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: 95vw;
+  max-height: 85vh;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+}
+
+.lightbox .fechar {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  color: white;
+  font-size: 42px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.projeto button {
   border: none;
   background: transparent;
   color: #38bdf8;
