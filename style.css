@@ -204,13 +204,21 @@ section > h2 {
   text-decoration: none;
   font-weight: bold;
 }
-.projeto button {
-  border: none;
-  background: transparent;
-  color: #38bdf8;
+.demo-link {
+  display: inline-block;
+  background: #38bdf8;
+  color: #07111f;
+  padding: 11px 18px;
+  border-radius: 10px;
+  text-decoration: none;
   font-size: 15px;
   font-weight: bold;
-  cursor: default;
+  transition: 0.3s;
+}
+
+.demo-link:hover {
+  transform: translateY(-2px);
+  background: #7dd3fc;
 }
 
 footer {
