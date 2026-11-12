@@ -597,3 +597,322 @@ footer {
     text-align: center;
   }
 }
+
+/* NOVO CATÁLOGO DE PROJETOS */
+
+.projeto-resumo {
+  background: linear-gradient(135deg, #172b40, #101827);
+  border: 1px solid #29445d;
+  border-radius: 14px;
+  padding: 20px 50px 20px 20px;
+  transition: 0.3s ease;
+}
+
+.projeto-resumo:hover {
+  border-color: #38bdf8;
+  background: linear-gradient(135deg, #1a354d, #111827);
+}
+
+.projeto-resumo h3 {
+  font-size: 23px;
+  margin-bottom: 8px;
+}
+
+.projeto-resumo .tipo-projeto {
+  margin-bottom: 10px;
+}
+
+.projeto-resumo .cliente-projeto {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.projeto-resumo::after {
+  right: 18px;
+  top: 22px;
+}
+
+@media (max-width: 700px) {
+  .projeto-resumo {
+    padding: 18px 42px 18px 16px;
+  }
+
+  .projeto-resumo h3 {
+    font-size: 20px;
+  }
+
+  .projeto-resumo::after {
+    right: 14px;
+    top: 18px;
+  }
+}
+
+/* GALERIA RESPONSIVA — PC E CELULAR */
+
+.projeto-galeria > a {
+  flex: 0 0 290px;
+  width: 290px;
+  min-width: 290px;
+  height: auto;
+  display: block;
+}
+
+.projeto-galeria img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* CELULARES */
+
+@media (max-width: 700px) {
+  .projeto-galeria > a {
+    flex: 0 0 85%;
+    width: 85%;
+    min-width: 85%;
+    height: auto;
+  }
+}
+
+/* ESPAÇAMENTO PARA O MENU FIXO */
+
+section[id] {
+  scroll-margin-top: 90px;
+}
+
+@media (max-width: 700px) {
+  section[id] {
+    scroll-margin-top: 110px;
+  }
+}
+
+/* CAPA DO CATÁLOGO DE PROJETOS */
+
+.projeto-resumo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.projeto-capa {
+  width: 115px;
+  height: 165px;
+  flex-shrink: 0;
+  object-fit: contain;
+  object-position: center;
+  background: #0b1120;
+  border: 1px solid #1e293b;
+  border-radius: 10px;
+}
+
+.projeto-informacoes {
+  flex: 1;
+  min-width: 0;
+}
+
+.projeto-informacoes h3 {
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+
+.projeto-informacoes p {
+  overflow-wrap: break-word;
+}
+
+/* AJUSTE PARA CELULARES */
+
+@media (max-width: 700px) {
+
+  .projeto-resumo {
+    gap: 12px;
+    padding: 14px 34px 14px 12px;
+  }
+
+  .projeto-capa {
+    width: 80px;
+    height: 120px;
+  }
+
+  .projeto-informacoes h3 {
+    font-size: 19px;
+    line-height: 1.3;
+  }
+
+  .projeto-informacoes .tipo-projeto {
+    font-size: 12px;
+  }
+
+  .projeto-informacoes .cliente-projeto {
+    font-size: 11px;
+  }
+}
+
+/* AJUSTE FINAL DO CARD DO PROJETO */
+
+/* Computador */
+@media (min-width: 701px) {
+  .projetos-container {
+    grid-template-columns: 1fr;
+    max-width: 850px;
+  }
+
+  details.projeto {
+    grid-column: auto;
+  }
+
+  .projeto-capa {
+    width: 130px;
+    height: 170px;
+  }
+}
+
+/* Celular */
+@media (max-width: 700px) {
+  .projeto {
+    padding: 12px;
+  }
+
+  .projeto-resumo {
+    gap: 14px;
+    padding: 16px 34px 16px 12px;
+  }
+
+  .projeto-capa {
+    width: 95px;
+    height: 135px;
+  }
+
+  .projeto-informacoes h3 {
+    font-size: 20px;
+  }
+
+  .projeto-informacoes .tipo-projeto {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .projeto-informacoes .cliente-projeto {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+}
+
+/* FUNCIONALIDADES DO PROJETO */
+
+.projeto-funcionalidades {
+  margin: 24px 0;
+}
+
+.projeto-funcionalidades h4 {
+  color: #f8fafc;
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+
+.projeto-funcionalidades ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.projeto-funcionalidades li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px;
+  background: #172338;
+  border: 1px solid #26364d;
+  border-radius: 10px;
+  color: #cbd5e1;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.projeto-funcionalidades li::before {
+  content: "✓";
+  color: #38bdf8;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+  .projeto-funcionalidades ul {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .projeto-funcionalidades li {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+}
+
+/* TÍTULO DA GALERIA */
+
+.galeria-titulo {
+  margin-top: 30px;
+  margin-bottom: 16px;
+  padding-top: 20px;
+
+  border-top: 1px solid #26364d;
+
+  color: #f8fafc;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+  .galeria-titulo {
+    margin-top: 24px;
+    margin-bottom: 12px;
+    padding-top: 18px;
+    font-size: 17px;
+  }
+}
+
+/* BOTÕES DE NAVEGAÇÃO DA GALERIA */
+
+.galeria-controles {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.galeria-controles button {
+  background: #172338;
+  color: #38bdf8;
+  border: 1px solid #29445d;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.galeria-controles button:hover {
+  background: #23415c;
+}
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+  .galeria-controles {
+    gap: 8px;
+  }
+
+  .galeria-controles button {
+    flex: 1;
+    min-width: 0;
+    padding: 12px 8px;
+    font-size: 13px;
+  }
+}

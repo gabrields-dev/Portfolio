@@ -75,19 +75,30 @@
 
         <details class="projeto">
 
-          <summary class="projeto-resumo">
+          
+<summary class="projeto-resumo">
 
-            <h3>Cardápio Online</h3>
+  <img
+    src="imagens/01-cardapio-cliente.png"
+    alt="Prévia do Cardápio Online"
+    class="projeto-capa"
+    loading="lazy"
+  >
 
-            <p class="tipo-projeto">
-              Restaurante • Sistema de Pedidos • Web/PWA
-            </p>
+  <div class="projeto-informacoes">
+    <h3>Cardápio Online</h3>
 
-            <p class="cliente-projeto">
-              Projeto desenvolvido para Espetinho e Petiscaria do Queixinho
-            </p>
+    <p class="tipo-projeto">
+      Restaurante • Sistema de Pedidos • Web/PWA
+    </p>
 
-          </summary>
+    <p class="cliente-projeto">
+      Projeto desenvolvido para Espetinho e Petiscaria do Queixinho
+    </p>
+  </div>
+
+</summary>
+
 
 
           <p>
@@ -99,6 +110,27 @@
 
 
           <!-- GALERIA DO PROJETO -->
+
+          
+<div class="projeto-funcionalidades">
+
+  <h4>Principais funcionalidades</h4>
+
+  <ul>
+    <li>Pedidos pelo QR Code da mesa</li>
+    <li>Controle de abertura e fechamento de mesas</li>
+    <li>Envio de pedidos para cozinha e churrasqueira</li>
+    <li>Notificações em tempo real para o atendimento</li>
+    <li>Fechamento de contas com registro de pagamento</li>
+  </ul>
+
+</div>
+
+
+<h4 class="galeria-titulo">
+  Conheça as telas do sistema
+</h4>
+
 
           <div class="projeto-galeria">
 
@@ -165,6 +197,23 @@
             </a>
 
           </div>
+
+          
+<div class="galeria-controles">
+
+  
+<button type="button"
+  onclick="this.closest('details').querySelector('.projeto-galeria').scrollBy({left: -300, behavior: 'smooth'})">
+  ← Anterior
+</button>
+
+<button type="button"
+  onclick="this.closest('details').querySelector('.projeto-galeria').scrollBy({left: 300, behavior: 'smooth'})">
+  Próximo →
+</button>
+
+
+</div>
 
 
           <p class="galeria-dica">
