@@ -1,459 +1,231 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07111f">
+  <meta name="description" content="Gabriel Silva, desenvolvedor de sistemas. Soluções web, cardápios digitais, catálogos online e ferramentas personalizadas para negócios.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gabriel Silva | Desenvolvedor de Sistemas">
+  <meta property="og:description" content="Soluções digitais para transformar seu negócio. Conheça meus projetos e solicite um orçamento.">
   <title>Gabriel Silva | Desenvolvedor de Sistemas</title>
-
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <header>
-
-    <h2 class="logo">Gabriel Silva</h2>
-
-    <div class="menu">
-      <a href="#inicio">Início</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#contato">Contato</a>
+  <!-- MENU -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#inicio" aria-label="Gabriel Silva — voltar ao início">
+        <span class="logo-name">Gabriel<span> Silva</span></span>
+        <small>DESENVOLVEDOR DE SISTEMAS</small>
+      </a>
+      <nav class="menu" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contratacao">Contratação</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <a class="header-cta" href="https://wa.me/5579996535001?text=Ol%C3%A1%2C%20Gabriel!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer">Solicitar orçamento <span aria-hidden="true">↗</span></a>
     </div>
-
   </header>
 
-
   <main>
-
-    <!-- INÍCIO -->
-
-    <section id="inicio" class="inicio">
-
-      <p class="destaque">Olá, eu sou</p>
-
-      <h1>Gabriel Silva</h1>
-
-      <h2>Desenvolvedor de Sistemas</h2>
-
-      <p>
-        Crio soluções digitais simples, funcionais e responsivas,
-        transformando ideias em projetos práticos.
-      </p>
-
-      <a href="#projetos" class="botao">
-        Ver meus projetos
-      </a>
-
+    <!-- ABERTURA COM PAISAGEM VETORIAL: SEM FOTO PESSOAL -->
+    <section id="inicio" class="inicio hero">
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 1600 780" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="ceu" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#173859"/><stop offset="47%" stop-color="#174b69"/><stop offset="100%" stop-color="#081a2a"/></linearGradient>
+            <radialGradient id="luz"><stop offset="0" stop-color="#70a9ca" stop-opacity=".42"/><stop offset="1" stop-color="#6ebee2" stop-opacity="0"/></radialGradient>
+            <linearGradient id="m1" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#264e70"/><stop offset="1" stop-color="#142f4a"/></linearGradient>
+            <linearGradient id="m2" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#153650"/><stop offset="1" stop-color="#0a2036"/></linearGradient>
+            <linearGradient id="lago" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#14415a"/><stop offset="1" stop-color="#081626"/></linearGradient>
+          </defs>
+          <rect width="1600" height="780" fill="url(#ceu)"/>
+          <ellipse cx="1120" cy="230" rx="700" ry="360" fill="url(#luz)"/>
+          <path d="M0 462 108 362 174 405 283 270 358 345 438 188 535 310 629 236 736 373 838 259 949 358 1055 216 1146 305 1258 160 1375 288 1452 225 1600 360V780H0Z" fill="url(#m1)"/>
+          <path d="m283 270 34 39-41-19-40 34zm155-82 40 74-42-28-30 31zm400 71 34 48-29-12-29 15zm217-43 40 70-44-30-27 27zm203-56 42 74-44-28-36 37z" fill="#90b5c8" opacity=".38"/>
+          <path d="M0 558 144 438 270 506 398 363 514 497 645 388 772 506 923 365 1051 477 1185 340 1326 471 1480 388 1600 463V780H0Z" fill="url(#m2)"/>
+          <path d="M0 585Q210 550 438 574T888 571T1600 571V780H0Z" fill="url(#lago)"/>
+          <path d="M0 603Q260 589 537 604T1100 606T1600 601" fill="none" stroke="#80bbcf" stroke-width="2" opacity=".2"/>
+          <path d="M0 630Q330 615 710 631T1600 626M0 685Q370 674 760 684T1600 678" fill="none" stroke="#71a2b7" stroke-width="1.3" opacity=".12"/>
+          <path d="M0 560 35 510 50 560 82 480 107 560 129 512 155 560 170 499 199 560 213 533 240 560 266 517 293 570 325 515 353 568V780H0ZM1270 563 1303 490 1332 559 1352 518 1375 560 1402 460 1434 562 1461 502 1494 567 1511 481 1541 563 1560 512 1600 566V780H1270Z" fill="#071625" opacity=".85"/>
+          <path d="M0 0H1600V780H0Z" fill="#051321" opacity=".16"/>
+        </svg>
+      </div>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="container hero-layout">
+        <div class="hero-text">
+          <span class="eyebrow hero-eyebrow"><span class="status-dot"></span> GABRIEL SILVA · DESENVOLVEDOR DE SISTEMAS</span>
+          <h1>Soluções digitais para <em>transformar</em> seu negócio.</h1>
+          <h2>Sistemas modernos, funcionais e personalizados.</h2>
+          <p>Desenvolvo sistemas web, cardápios digitais e catálogos online para organizar processos, facilitar o atendimento e criar novas possibilidades para o seu negócio.</p>
+          <div class="inicio-botoes">
+            <a href="#projetos" class="botao">Conhecer meus projetos <span aria-hidden="true">↗</span></a>
+            <a href="#contato" class="botao botao-secundario">Vamos conversar</a>
+          </div>
+          <div class="hero-meta"><span class="meta-line" aria-hidden="true"></span> <span>PROJETOS REAIS · EXPERIÊNCIA RESPONSIVA · FOCO NO NEGÓCIO</span></div>
+        </div>
+        <div class="hero-visual" aria-label="Prévia do projeto Cardápio Online">
+          <div class="hero-preview-glow" aria-hidden="true"></div>
+          <div class="preview-card">
+            <div class="preview-head"><span class="preview-dot"></span> PROJETO EM DESTAQUE <span class="preview-id">01 / PORTFÓLIO</span></div>
+            <div class="preview-content">
+              <div class="phone-frame"><div class="phone-island" aria-hidden="true"></div><img src="imagens/01-cardapio-cliente.png" alt="Captura da tela do Cardápio Online do Espetinho e Petiscaria do Queixinho" loading="eager"></div>
+              <div class="preview-copy"><span class="mini-eyebrow">SISTEMA WEB / PWA</span><strong>Cardápio Online</strong><p>Pedidos por QR Code, mesas e painéis operacionais.</p><div class="preview-chips"><span>QR Code</span><span>Tempo real</span><span>Gestão</span></div></div>
+            </div>
+            <a href="#projetos" class="preview-link">Ver detalhes do sistema <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="float-label" aria-hidden="true"><span class="float-icon">✓</span><span>Design para celular<br><small>e computador</small></span></div>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#sobre">DESLIZE PARA EXPLORAR <span aria-hidden="true">↓</span></a>
     </section>
-
 
     <!-- SOBRE -->
-
-    <section id="sobre">
-
-      <h2>Sobre mim</h2>
-
-      <p>
-        Sou desenvolvedor de sistemas focado em criar soluções digitais
-        funcionais, organizadas e responsivas. Desenvolvo projetos pensando
-        na necessidade de cada negócio e na facilidade de uso.
-      </p>
-
+    <section id="sobre" class="sobre section-padding">
+      <div class="container">
+        <div class="about-grid">
+          <div class="sobre-conteudo">
+            <span class="eyebrow">CONHEÇA MEU TRABALHO</span>
+            <h2 class="section-title">Desenvolvendo soluções que <em>fazem a diferença.</em></h2>
+            <p>Sou Gabriel Silva, desenvolvedor de sistemas focado em criar soluções digitais modernas, funcionais e adaptadas às necessidades de cada negócio.</p>
+            <p>Meu objetivo é transformar ideias em ferramentas práticas que ajudem empresas a organizar processos, facilitar o atendimento e melhorar a experiência dos seus clientes.</p>
+            <a class="text-link" href="#projetos">Conheça um projeto desenvolvido <span aria-hidden="true">↗</span></a>
+          </div>
+          <aside class="about-panel" aria-label="Minha atuação">
+            <div class="about-panel-top"><span class="about-symbol">&lt;/&gt;</span><span>DESENVOLVIMENTO COM PROPÓSITO</span></div>
+            <h3>Da necessidade à solução.</h3>
+            <p>Cada sistema começa pela compreensão do negócio e das tarefas que precisam ser simplificadas.</p>
+            <div class="about-facts"><div><span class="fact-icon">01</span><span><strong>Experiência web</strong><small>Sistemas acessíveis pelo navegador</small></span></div><div><span class="fact-icon">02</span><span><strong>Mobile first</strong><small>Interface pensada para uso no celular</small></span></div><div><span class="fact-icon">03</span><span><strong>Projeto personalizado</strong><small>Funcionalidades alinhadas ao escopo</small></span></div></div>
+          </aside>
+        </div>
+        <div class="sobre-diferenciais">
+          <article class="sobre-item"><span class="feature-icon">◇</span><h3>Soluções personalizadas</h3><p>Projetos desenvolvidos de acordo com as necessidades de cada negócio.</p></article>
+          <article class="sobre-item"><span class="feature-icon">▣</span><h3>Design responsivo</h3><p>Interfaces adaptadas para computadores, tablets e celulares.</p></article>
+          <article class="sobre-item"><span class="feature-icon">✧</span><h3>Facilidade de uso</h3><p>Sistemas com foco na organização, praticidade e experiência do usuário.</p></article>
+        </div>
+      </div>
     </section>
 
+    <!-- SERVIÇOS -->
+    <section id="servicos" class="servicos section-padding">
+      <div class="container">
+        <div class="section-heading centered"><span class="eyebrow">O QUE EU DESENVOLVO</span><h2 class="section-title">Soluções para o seu negócio</h2><p>Ferramentas digitais pensadas para situações reais do dia a dia.</p></div>
+        <div class="servicos-grid">
+          <article class="servico-card"><div class="servico-icon" aria-hidden="true">&lt;/&gt;</div><h3>Sistemas web</h3><p>Aplicações para organizar processos, informações e rotinas do negócio.</p></article>
+          <article class="servico-card"><div class="servico-icon" aria-hidden="true">▤</div><h3>Cardápios digitais</h3><p>Pedidos por QR Code, visualização de produtos e integração com setores.</p></article>
+          <article class="servico-card"><div class="servico-icon" aria-hidden="true">▦</div><h3>Catálogos online</h3><p>Vitrines responsivas para apresentação de produtos e pedidos.</p></article>
+          <article class="servico-card"><div class="servico-icon" aria-hidden="true">◈</div><h3>Painéis de gestão</h3><p>Interfaces de acompanhamento e controle conforme as necessidades do projeto.</p></article>
+        </div>
+      </div>
+    </section>
 
     <!-- PROJETOS -->
-
-    <section id="projetos">
-
-      <h2>Meus Projetos</h2>
-
-      <div class="projetos-container">
-
-        <details class="projeto">
-
-          
-<summary class="projeto-resumo">
-
-  <img
-    src="imagens/01-cardapio-cliente.png"
-    alt="Prévia do Cardápio Online"
-    class="projeto-capa"
-    loading="lazy"
-  >
-
-  <div class="projeto-informacoes">
-    <h3>Cardápio Online</h3>
-
-    <p class="tipo-projeto">
-      Restaurante • Sistema de Pedidos • Web/PWA
-    </p>
-
-    <p class="cliente-projeto">
-      Projeto desenvolvido para Espetinho e Petiscaria do Queixinho
-    </p>
-  </div>
-
-</summary>
-
-
-
-          <p>
-            Sistema de pedidos por QR Code, com controle de mesas,
-            envio em tempo real para os setores responsáveis,
-            acompanhamento de status, notificações para o atendimento
-            e fechamento de contas com registro de pagamento.
-          </p>
-
-
-          <!-- GALERIA DO PROJETO -->
-
-          
-<div class="projeto-funcionalidades">
-
-  <h4>Principais funcionalidades</h4>
-
-  <ul>
-    <li>Pedidos pelo QR Code da mesa</li>
-    <li>Controle de abertura e fechamento de mesas</li>
-    <li>Envio de pedidos para cozinha e churrasqueira</li>
-    <li>Notificações em tempo real para o atendimento</li>
-    <li>Fechamento de contas com registro de pagamento</li>
-  </ul>
-
-</div>
-
-
-<h4 class="galeria-titulo">
-  Conheça as telas do sistema
-</h4>
-
-
-          <div class="projeto-galeria">
-
-            <!-- 1 - CARDÁPIO DO CLIENTE -->
-
-            <a href="#foto1">
-              <img
-                src="imagens/01-cardapio-cliente.png"
-                alt="Cardápio do cliente">
-            </a>
-
-
-            <!-- 2 - CONTROLE DE MESAS -->
-
-            <a href="#foto2">
-              <img
-                src="imagens/02-controle-mesas.png"
-                alt="Controle de mesas">
-            </a>
-
-
-            <!-- 3 - RESUMO E ENVIO DO PEDIDO -->
-
-            <a href="#foto3">
-              <img
-                src="imagens/03-resumo-pedido.png"
-                alt="Resumo e envio do pedido">
-            </a>
-
-
-            <!-- 4 - PAINEL DA COZINHA -->
-
-            <a href="#foto4">
-              <img
-                src="imagens/04-cozinha.png"
-                alt="Painel da cozinha">
-            </a>
-
-
-            <!-- 5 - PAINEL DA CHURRASQUEIRA -->
-
-            <a href="#foto5">
-              <img
-                src="imagens/05-churrasqueira.png"
-                alt="Painel da churrasqueira">
-            </a>
-
-
-            <!-- 6 - PAINEL DO ATENDIMENTO -->
-
-            <a href="#foto6">
-              <img
-                src="imagens/06-atendimento.png"
-                alt="Painel do atendimento">
-            </a>
-
-
-            <!-- 7 - PAGAMENTO -->
-
-            <a href="#foto7">
-              <img
-                src="imagens/07-pagamento.png"
-                alt="Pagamento e fechamento da conta">
-            </a>
-
-          </div>
-
-          
-<div class="galeria-controles">
-
-  
-<button type="button"
-  onclick="this.closest('details').querySelector('.projeto-galeria').scrollBy({left: -300, behavior: 'smooth'})">
-  ← Anterior
-</button>
-
-<button type="button"
-  onclick="this.closest('details').querySelector('.projeto-galeria').scrollBy({left: 300, behavior: 'smooth'})">
-  Próximo →
-</button>
-
-
-</div>
-
-
-          <p class="galeria-dica">
-            Deslize para o lado para ver mais →
-          </p>
-
-        </details>
-
+    <section id="projetos" class="projetos section-padding">
+      <div class="container">
+        <div class="projetos-cabecalho section-heading"><span class="eyebrow">PORTFÓLIO DE SISTEMAS</span><h2 class="section-title">Projetos desenvolvidos</h2><p>Conheça soluções digitais criadas para facilitar processos, organizar operações e melhorar a experiência dos clientes.</p></div>
+        <div class="projetos-container">
+          <details class="projeto">
+            <summary class="projeto-resumo">
+              <img src="imagens/01-cardapio-cliente.png" alt="Prévia do Cardápio Online" class="projeto-capa" loading="lazy">
+              <span class="projeto-informacoes"><span class="mini-eyebrow">PROJETO REAL · SISTEMA WEB</span><span class="projeto-titulo">Cardápio Online</span><span class="tipo-projeto">Restaurante • Sistema de Pedidos • Web/PWA</span><span class="cliente-projeto">Projeto desenvolvido para Espetinho e Petiscaria do Queixinho</span></span>
+              <span class="projeto-seta" aria-hidden="true">⌄</span>
+            </summary>
+            <div class="projeto-corpo">
+              <p class="projeto-descricao">Sistema de pedidos por QR Code, com controle de mesas, envio em tempo real para os setores responsáveis, acompanhamento de status, notificações para o atendimento e fechamento de contas com registro de pagamento.</p>
+              <div class="projeto-funcionalidades"><h4>Principais funcionalidades</h4><ul><li>Pedidos pelo QR Code da mesa</li><li>Controle de abertura e fechamento de mesas</li><li>Envio de pedidos para cozinha e churrasqueira</li><li>Notificações em tempo real para o atendimento</li><li>Fechamento de contas com registro de pagamento</li></ul></div>
+              <div class="galeria-header"><h4 class="galeria-titulo">Conheça as telas do sistema</h4><span>07 TELAS</span></div>
+              <div class="projeto-galeria" aria-label="Galeria de telas do Cardápio Online">
+                <a href="imagens/01-cardapio-cliente.png" data-lightbox><img src="imagens/01-cardapio-cliente.png" alt="Cardápio do cliente" loading="lazy"><span>01 · Cardápio do cliente</span></a>
+                <a href="imagens/02-controle-mesas.png" data-lightbox><img src="imagens/02-controle-mesas.png" alt="Controle de mesas" loading="lazy"><span>02 · Controle de mesas</span></a>
+                <a href="imagens/03-resumo-pedido.png" data-lightbox><img src="imagens/03-resumo-pedido.png" alt="Resumo e envio do pedido" loading="lazy"><span>03 · Resumo do pedido</span></a>
+                <a href="imagens/04-cozinha.png" data-lightbox><img src="imagens/04-cozinha.png" alt="Painel da cozinha" loading="lazy"><span>04 · Painel da cozinha</span></a>
+                <a href="imagens/05-churrasqueira.png" data-lightbox><img src="imagens/05-churrasqueira.png" alt="Painel da churrasqueira" loading="lazy"><span>05 · Churrasqueira</span></a>
+                <a href="imagens/06-atendimento.png" data-lightbox><img src="imagens/06-atendimento.png" alt="Painel do atendimento" loading="lazy"><span>06 · Atendimento</span></a>
+                <a href="imagens/07-pagamento.png" data-lightbox><img src="imagens/07-pagamento.png" alt="Pagamento e fechamento da conta" loading="lazy"><span>07 · Pagamento</span></a>
+              </div>
+              <div class="galeria-controles"><button type="button" class="gallery-prev" aria-label="Ver imagens anteriores">← Anterior</button><button type="button" class="gallery-next" aria-label="Ver próximas imagens">Próximo →</button></div>
+              <p class="galeria-dica">Deslize para o lado ou use os botões para conhecer as telas. Clique em uma imagem para ampliar.</p>
+            </div>
+          </details>
+        </div>
       </div>
-
     </section>
-
-
-    <!-- IMAGENS AMPLIADAS -->
-
-
-    <!-- FOTO 1 -->
-
-    <div id="foto1" class="lightbox">
-
-      <a href="#projetos" class="fechar">×</a>
-
-      <img
-        src="imagens/01-cardapio-cliente.png"
-        alt="Cardápio do cliente">
-
-    </div>
-
-
-    <!-- FOTO 2 -->
-
-    <div id="foto2" class="lightbox">
-
-      <a href="#projetos" class="fechar">×</a>
-
-      <img
-        src="imagens/02-controle-mesas.png"
-        alt="Controle de mesas">
-
-    </div>
-
-
-    <!-- FOTO 3 -->
-
-    <div id="foto3" class="lightbox">
-
-      <a href="#projetos" class="fechar">×</a>
-
-      <img
-        src="imagens/03-resumo-pedido.png"
-        alt="Resumo e envio do pedido">
-
-    </div>
-
-
-    <!-- FOTO 4 -->
-
-    <div id="foto4" class="lightbox">
-
-      <a href="#projetos" class="fechar">×</a>
-
-      <img
-        src="imagens/04-cozinha.png"
-        alt="Painel da cozinha">
-
-    </div>
-
-
-    <!-- FOTO 5 -->
-
-    <div id="foto5" class="lightbox">
-
-      <a href="#projetos" class="fechar">×</a>
-
-      <img
-        src="imagens/05-churrasqueira.png"
-        alt="Painel da churrasqueira">
-
-    </div>
-
-
-    <!-- FOTO 6 -->
-
-    <div id="foto6" class="lightbox">
-
-      <a href="#projetos" class="fechar">×</a>
-
-      <img
-        src="imagens/06-atendimento.png"
-        alt="Painel do atendimento">
-
-    </div>
-
-
-    <!-- FOTO 7 -->
-
-    <div id="foto7" class="lightbox">
-
-      <a href="#projetos" class="fechar">×</a>
-
-      <img
-        src="imagens/07-pagamento.png"
-        alt="Pagamento e fechamento da conta">
-
-    </div>
-
 
     <!-- CONTRATAÇÃO -->
-
-    <section id="contratacao">
-
-      <h2>Como funciona a contratação</h2>
-
-      <div class="contratacao-container">
-
-        <div class="contratacao-card">
-
-          <h3>1. Orçamento e escopo</h3>
-
-          <p>
-            Antes de iniciar, definimos o que será desenvolvido,
-            o prazo e o valor do projeto.
-          </p>
-
+    <section id="contratacao" class="contratacao section-padding">
+      <div class="container">
+        <div class="section-heading"><span class="eyebrow">FORMAS DE CONTRATAÇÃO</span><h2 class="section-title">Como funciona a contratação</h2><p>Ofereço duas modalidades para atender às necessidades de cada negócio: desenvolvimento com pagamento único ou utilização do sistema por assinatura mensal.</p></div>
+        <div class="contratacao-container contratacao-modalidades">
+          <article class="contratacao-card contratacao-plano"><span class="contratacao-plano-etiqueta">PAGAMENTO ÚNICO</span><h3>Desenvolvimento sob medida</h3><p>O sistema é desenvolvido conforme as funcionalidades e condições definidas no orçamento aprovado.</p><ul class="contratacao-lista"><li>50% do valor na contratação para iniciar o desenvolvimento.</li><li>50% restantes na conclusão, antes da entrega final.</li><li>Novas funcionalidades e manutenção podem ser contratadas separadamente.</li></ul></article>
+          <article class="contratacao-card contratacao-plano"><span class="contratacao-plano-etiqueta">ASSINATURA MENSAL</span><h3>Sistema por mensalidade</h3><p>O cliente utiliza o sistema mediante o pagamento de uma mensalidade, conforme as condições contratadas.</p><ul class="contratacao-lista"><li>Acesso ao sistema enquanto a assinatura estiver ativa.</li><li>Valor e serviços incluídos definidos antes da contratação.</li><li>Em caso de cancelamento, o acesso ao sistema é encerrado conforme as condições estabelecidas em contrato.</li></ul></article>
         </div>
-
-
-        <div class="contratacao-card">
-
-          <h3>2. 50% para iniciar</h3>
-
-          <p>
-            O desenvolvimento começa após a aprovação do orçamento
-            e o pagamento de 50% do valor combinado.
-          </p>
-
+        <h3 class="contratacao-subtitulo">Etapas do atendimento</h3>
+        <div class="contratacao-container etapas-grid">
+          <article class="contratacao-card etapa-card"><span>01</span><h3>Entendimento do projeto</h3><p>Conversamos sobre as necessidades do negócio e as funcionalidades desejadas para o sistema.</p></article>
+          <article class="contratacao-card etapa-card"><span>02</span><h3>Proposta e orçamento</h3><p>Definimos o escopo, o prazo, os valores e a modalidade de contratação escolhida.</p></article>
+          <article class="contratacao-card etapa-card"><span>03</span><h3>Desenvolvimento</h3><p>Após a aprovação das condições, o sistema é desenvolvido conforme o que foi combinado.</p></article>
+          <article class="contratacao-card etapa-card"><span>04</span><h3>Entrega e continuidade</h3><p>O sistema é disponibilizado conforme a modalidade contratada. Manutenção, suporte e alterações seguem as condições acordadas.</p></article>
         </div>
-
-
-        <div class="contratacao-card">
-
-          <h3>3. 50% na entrega</h3>
-
-          <p>
-            Os 50% restantes são pagos após a conclusão do projeto,
-            antes da entrega final.
-          </p>
-
-        </div>
-
-
-        <div class="contratacao-card">
-
-          <h3>4. Alterações</h3>
-
-          <p>
-            Ajustes previstos no escopo estão incluídos.
-            Novas funcionalidades ou mudanças extras são cobradas à parte.
-          </p>
-
-        </div>
-
-
-        <div class="contratacao-card">
-
-          <h3>5. Prazo</h3>
-
-          <p>
-            O prazo é definido antes do início e pode variar
-            de acordo com o tamanho e a complexidade do projeto.
-          </p>
-
-        </div>
-
-
-        <div class="contratacao-card">
-
-          <h3>6. Pós-entrega</h3>
-
-          <p>
-            Manutenção, novas funções e futuras atualizações
-            podem ser contratadas separadamente.
-          </p>
-
-        </div>
-
+        <p class="contratacao-aviso">Todas as condições são definidas antes da contratação, incluindo valores, prazos, funcionalidades, alterações, suporte e, quando aplicável, cancelamento da assinatura. Direitos de uso e eventual entrega de código-fonte também seguem o contrato.</p>
+        <a href="https://wa.me/5579996535001?text=Ol%C3%A1%2C%20Gabriel!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." class="botao botao-orcamento" target="_blank" rel="noopener noreferrer">Solicitar orçamento <span aria-hidden="true">↗</span></a>
       </div>
-
-
-      <p class="contratacao-aviso">
-        Tudo é combinado com clareza antes do início do projeto,
-        evitando surpresas no valor ou na entrega.
-      </p>
-
-
-      <a
-        href="https://wa.me/5579996535001?text=Ol%C3%A1%2C%20Gabriel!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20um%20projeto."
-        class="botao-orcamento"
-        target="_blank"
-        rel="noopener noreferrer">
-        Solicitar orçamento
-      </a>
-
     </section>
-
 
     <!-- CONTATO -->
-
-    <section id="contato">
-
-      <h2>Contato</h2>
-
-      <p>
-        Tem interesse em um projeto? Entre em contato comigo.
-      </p>
-
-      <div class="contato-botoes">
-
-        <a
-          href="https://wa.me/5579996535001"
-          class="botao"
-          target="_blank"
-          rel="noopener noreferrer">
-          Falar comigo
-        </a>
-
-        <a
-          href="https://github.com/gabrields-dev"
-          class="botao"
-          target="_blank"
-          rel="noopener noreferrer">
-          GitHub
-        </a>
-
+    <section id="contato" class="contato section-padding">
+      <div class="container">
+        <div class="contato-conteudo">
+          <span class="eyebrow">VAMOS CONVERSAR</span>
+          <h2>Tem um projeto em mente?</h2>
+          <p class="contato-descricao">Vamos conversar sobre as necessidades do seu negócio e encontrar uma solução digital que faça sentido para você.</p>
+          <div class="contato-botoes"><a href="https://wa.me/5579996535001?text=Ol%C3%A1%2C%20Gabriel!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." class="botao contato-whatsapp" target="_blank" rel="noopener noreferrer">Solicitar orçamento pelo WhatsApp <span aria-hidden="true">↗</span></a><a href="https://github.com/gabrields-dev" class="botao botao-secundario contato-github" target="_blank" rel="noopener noreferrer">Conhecer meu GitHub <span aria-hidden="true">↗</span></a></div>
+          <p class="contato-observacao">Conte um pouco sobre sua ideia e vamos avaliar a melhor forma de desenvolvê-la.</p>
+        </div>
       </div>
-
     </section>
-
   </main>
 
-</body>
+  <footer class="site-footer"><div class="container footer-inner"><div><strong>Gabriel<span> Silva</span></strong><small>Desenvolvedor de Sistemas</small></div><p>© <span id="ano"></span> Gabriel Silva. Todos os direitos reservados.</p><a href="#inicio">Voltar ao início ↑</a></div></footer>
 
+  <!-- VISUALIZADOR NATIVO: FECHA SEM MUDAR A POSIÇÃO DA PÁGINA -->
+  <dialog id="visualizador" class="visualizador" aria-label="Imagem ampliada do sistema">
+    <button type="button" class="visualizador-fechar" aria-label="Fechar imagem">×</button>
+    <img src="" alt="">
+    <p class="visualizador-legenda"></p>
+  </dialog>
+
+  <script>
+    // Ano do rodapé
+    document.getElementById('ano').textContent = new Date().getFullYear();
+
+    // Galeria de imagens: não altera a URL e nem a posição de rolagem
+    const visualizador = document.getElementById('visualizador');
+    const imagemAmpliada = visualizador.querySelector('img');
+    const legendaAmpliada = visualizador.querySelector('.visualizador-legenda');
+    const botaoFechar = visualizador.querySelector('.visualizador-fechar');
+    document.querySelectorAll('[data-lightbox]').forEach(link => {
+      link.addEventListener('click', evento => {
+        evento.preventDefault();
+        imagemAmpliada.src = link.getAttribute('href');
+        imagemAmpliada.alt = link.querySelector('img')?.alt || 'Tela do sistema';
+        legendaAmpliada.textContent = imagemAmpliada.alt;
+        visualizador.showModal();
+      });
+    });
+    botaoFechar.addEventListener('click', () => visualizador.close());
+    visualizador.addEventListener('click', evento => { if (evento.target === visualizador) visualizador.close(); });
+
+    // Botões da galeria, funcionais no computador e no celular
+    document.querySelectorAll('.projeto').forEach(projeto => {
+      const galeria = projeto.querySelector('.projeto-galeria');
+      projeto.querySelector('.gallery-prev')?.addEventListener('click', () => galeria.scrollBy({ left: -Math.max(250, galeria.clientWidth * 0.8), behavior: 'smooth' }));
+      projeto.querySelector('.gallery-next')?.addEventListener('click', () => galeria.scrollBy({ left: Math.max(250, galeria.clientWidth * 0.8), behavior: 'smooth' }));
+    });
+  </script>
+</body>
 </html>
