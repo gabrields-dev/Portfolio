@@ -375,3 +375,51 @@ section[id] { scroll-margin-top: calc(var(--header-height) + 20px); }
     display: none;
   }
 }
+/* VITRINE STUDIO — APRESENTAÇÃO COMERCIAL */
+
+.projeto-vitrine .projeto-corpo > p:not(.galeria-dica):not(.projeto-aviso-demo) {
+  color: #d3e0ec;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.projeto-vitrine .projeto-galeria {
+  margin-top: 26px;
+}
+
+.projeto-aviso-demo {
+  margin-top: 24px;
+  padding: 14px 16px;
+  background: rgba(16, 46, 68, 0.5);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  color: #b8d3e5;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.projeto-acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.projeto-acoes .botao {
+  flex: 1 1 250px;
+  min-width: 0;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .projeto-acoes {
+    flex-direction: column;
+  }
+
+  .projeto-acoes .botao {
+    flex: auto;
+    width: 100%;
+    white-space: normal;
+  }
+}
